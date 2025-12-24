@@ -20,10 +20,10 @@ INSERT INTO todos (task, completed) VALUES
 ('Implementasi Environment Variable', 0);
 
 -- Membuat user baru dengan password
-CREATE USER 'todosapp1'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password123';
+CREATE USER 'tekser_user'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password123';
 
 -- Memberikan Hak Akses CRUD (Create, Read, Update, Delete)
-GRANT SELECT, INSERT, UPDATE, DELETE ON praktikum_tekser.* TO 'todosapp1'@'localhost';
+GRANT SELECT, INSERT, UPDATE, DELETE ON praktikum_tekser.* TO 'tekser_user'@'localhost';
 
 -- Refresh privileges agar user bisa langsung dipakai
 FLUSH PRIVILEGES;
